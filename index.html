@@ -1,6 +1,13 @@
 <doctype! html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 <style>
 li{
 
@@ -23,7 +30,7 @@ li a {
     display: block;
     color: blue;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     text-decoration: none;
 }
 #aa
@@ -39,36 +46,45 @@ li a:hover {
 .column {
 	border:3px;
 border-color:black;
-	margin-left:0;
+	background:orange;
 	height=100%;
     float: left;
-    width: 60%;
+    width: 70%;
 }
-#column1
+.column1
 
 {
 background:orange;
 height:100%;
-padding-left:5;
-margin-left:660;
-font-color:blue;
+width:30%;
+padding-left:0;
+
+font-color:white;
 
 }
-#column1 h1
+.column1 h1
 {
-color:blue;
+color:white;
 font-size:30px;
 }
-#column1 table td
+.column1 table td
 {
-color:blue;
-font-size:25px;
+color:white;
+font-size:18px;
+
 }
-#column1 h2 input
+.column1 table td input
+{
+width:150px;
+}
+.column1 h2 input
 {
 color:black;
-font-size: 40px;
+font-size: 20px;
+
+
 }
+
 
 
 /*
@@ -79,6 +95,12 @@ font-size: 40px;
     display: table;
     clear: both;
 }
+#vv
+{
+width:100%;
+margin-right:0;
+margin-left:0;
+}
 #vv ul
 {
 font-size:20px;
@@ -86,17 +108,19 @@ background:orange;
 }
 #vv bb  nn a
 {
-float:center;
+float:left;
 }
 
 
 
 </style>	
+
 </head>
 <body>
-<div>
-<ul>
-<li id=aa> <img src="Ranger.jpg"style="height:55;width:85" border:"2px" ></li>
+<div class="container-fluid">
+		<div>
+		<ul>
+		<li id=aa> <img src="Ranger.jpg"style="height:55;width:85" border:"2px" ></li>
 <li ><a href="" >Contact </a>  </li>
 <li ><a href="" >Sign In  </a>  </li>
 <li ><a href="" >About</a>  </li>
@@ -110,60 +134,67 @@ float:center;
 </div>
  
 
- <div id="column1"  >
-<div>
+ <div  class="column1" >
+
 	<br/>
 	<br/>
 	<center><img src="Ranger.jpg" border="none" width=120 height="120" </center>
 <h1 font-size="20px"><center>REGISTER</center></h1>
-<center>
+
 
 <form  style="height=100%">
-<table calss="tables" style="font-color:white;">
+<table calss="tables" >
     <tr>
-      <td align="right"  >First Name:</td>
-      <td align="left"><input type="text" name="first" /></td>
+      <td  align="right" >First Name:</td>
+      <td  align="left"><input type="text" name="first" /></td>
     </tr>
     <tr>
-      <td  align="right" style="font-color:white;" >Last Name:</td>
+      <td  align="right"  >Last Name:</td>
       <td align="left"><input type="text" name="last" /></td>
     </tr>
     <tr>
-      <td align="right" style="font-color:white;" >Email:</td>
+      <td align="right">Email:</td>
       <td align="left"><input type="text" name="email" /></td>
     </tr>
  <tr>
-      <td align="right" style="font-color:white;" >User Name:</td>
-      <td align="left"><input type="text" name="text" /></td>
+      <td align="right"  >User Name:</td>
+      <td align="left"><input type="text" name="text"  />
+</td>
+
     </tr>
  <tr>
-      <td align="right" font-color="white" >Password:</td>
+      <td align="right" >Password:</td>
       <td align="left"><input type="password" name="password" /></td>
     </tr>
  <tr>
  <tr>
-      <td align="right" text-color="white;" > Confirm Password:</td>
+      <td align="right" > Confirm Password:</td>
       <td align="left"><input type="password" name="confirm password" /></td>
     </tr>
  <tr>
-      <td align="right" style="font-color:white;" >Contact Number:</td>
+      <td align="right" >Contact Number:</td>
       <td align="left"><input type="text" name="number" /></td>
     </tr>
  <tr>
-      <td align="right" style="font-color:white;" >Locality:</td>
+      <td align="right"  >Locality:</td>
       <td align="left"><input type="text" name="text" /></td>
     </tr>
 
   </table>
 
 </form>
-</center>
 
-<h2><input type="button" name="submit" width="100"font-size="50px" value="Submit"/></h2>
-</div>
+
+<h2><input type="button" name="submit" font-size="25px" value="Submit"/></h2>
+
 </div>
 </div>
 
+
+
+</div 	 >
+</body>
+<footer>
 <div id="vv">
 <ul id="bb">
 <li id="nn"><a href =" ">Thankyou</a></li>
@@ -174,8 +205,6 @@ float:center;
 
 
 </div>
-
-
-</body>
+</footer>
 </html>
 </doctype!>
